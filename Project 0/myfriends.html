@@ -9,19 +9,6 @@
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" href="stylesheets/project.css">
     <title>My Webpage</title>
-    <style>
-        @media (min-width: 500px) {
-            h1::before {
-                content: "This is me";
-            }
-        }
-
-        @media (max-width: 499px) {
-            h1::before {
-                content: "MEEE!";
-            }
-        }
-    </style>
 </head>
 <nav class="navbar navbar-expand-sm navbar-light">
     <a class="navbar-brand" href="index.html">
@@ -33,10 +20,10 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
+            <li class="nav-item">
                 <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item active">
                 <a class="nav-link" href="myfriends.html">My Friends</a>
             </li>
             <li class="nav-item">
@@ -49,11 +36,35 @@
     </div>
 </nav>
 
+
 <body>
-    <div class="container-fluid">
-        <img class="homepage" src="assets/homepage.jpg">
-        <div class="row justify-content-center">
-            <h1></h1>
+    <div class="container">
+        <div class="row d-flex justify-content-center">
+            <h1>My Friends</h1>
+            <table class="table">
+                <thead>
+                  <tr id="headers">
+                    <th scope="col">#</th>
+                    <th scope="col">First</th>
+                    <th scope="col">Last</th>
+                    <th scope="col">Favorite food</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>John</td>
+                    <td>Koh</td>
+                    <td>Laksa</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>Jessy</td>
+                    <td>Lim</td>
+                    <td>Wanton Noodles</td>
+                  </tr>
+                </tbody>
+              </table>
         </div>
     </div>
 </body>

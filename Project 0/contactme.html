@@ -9,19 +9,6 @@
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" href="stylesheets/project.css">
     <title>My Webpage</title>
-    <style>
-        @media (min-width: 500px) {
-            h1::before {
-                content: "This is me";
-            }
-        }
-
-        @media (max-width: 499px) {
-            h1::before {
-                content: "MEEE!";
-            }
-        }
-    </style>
 </head>
 <nav class="navbar navbar-expand-sm navbar-light">
     <a class="navbar-brand" href="index.html">
@@ -33,7 +20,7 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
+            <li class="nav-item">
                 <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
@@ -42,18 +29,37 @@
             <li class="nav-item">
                 <a class="nav-link" href="hobbies.html">Hobbies</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item active">
                 <a class="nav-link" href="contactme.html">Contact Me</a>
             </li>
         </ul>
     </div>
 </nav>
 
+
 <body>
-    <div class="container-fluid">
-        <img class="homepage" src="assets/homepage.jpg">
-        <div class="row justify-content-center">
-            <h1></h1>
+    <div class="container">
+        <div class="row d-flex justify-content-center">
+            <h1>Contact me</h1>
+        </div>
+        <div class="row d-flex justify-content-center">
+            <form>
+                <div class="form-group">
+                    <label for="email">Email address</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
+                        else.</small>
+                </div>
+                <div class="form-group">
+                    <label for="details">Question</label>
+                    <textarea class="form-control" id="validationTextarea"
+                        placeholder="Fill in your question"></textarea>
+                </div>
+                <div class="row d-flex justify-content-between">
+                    <button type="submit" class="btn btn-primary success">Submit</button>
+                    <button type="reset" class="btn btn-primary cancel">Reset</button>
+                </div>
+            </form>
         </div>
     </div>
 </body>

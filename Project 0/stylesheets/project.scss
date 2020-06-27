@@ -1,10 +1,27 @@
-nav {
-    background-image: url("assets/homepage.jpg");
-}
-
 .homepage {
-    width: auto;
+    width: 100%;
     height: auto;
     max-width: 1500px; 
     max-height: 1000px;
+}
+
+div {
+    #headers {
+        background-color: gray; 
+    }
+}
+
+%button {
+    font-family: sans-serif;
+    font-size: 18px;
+}
+
+.success {
+    @extend %button;
+    background-color: blue($color: #000000);
+}
+
+.cancel {
+    @extend %button;
+    background-color: gray;
 }
