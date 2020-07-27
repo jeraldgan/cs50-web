@@ -1,0 +1,22 @@
+{% extends "encyclopedia/layout.html" %}
+
+{% block title %}
+Encyclopedia Entry
+{% endblock %}
+
+{% block body %}
+
+{% if title == None %}
+
+<h1>Not Found</h1>
+
+{% else %}
+
+{% autoescape off %}
+{{ content }}
+{% endautoescape %}
+<a href="/edit/{{ title }}">Edit Content</a>
+
+{% endif %}
+
+{% endblock %}
